@@ -12,7 +12,7 @@ class UserList extends Component {
     */}
     
     if(!userWhoLikedMovie || userWhoLikedMovie.length === 0) {
-      return <p>No one likes this movie.</p>
+      return <p>No one</p>
     }
 
     
