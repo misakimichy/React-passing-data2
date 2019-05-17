@@ -7,14 +7,14 @@ class MovieCard extends Component {
 
         // Return JSX
         return (
-         <li key={movieInfo.id}>
+         <div key={movieInfo.id}>
            <h2>{movieInfo.name}</h2>
            <p>Liked By</p>
             <UserList 
                 users={users}
                 userWhoLikedMovie={userWhoLikedMovie}
             />
-        </li>
+        </div>
         );
     }
 }
