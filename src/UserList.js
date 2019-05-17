@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class UserList extends Component {
 	render() {
-    const {user, userWhoLikedMovie} = this.props;
+    const {users, userWhoLikedMovie} = this.props;
 
     {/*  Add if statement
     1. If the movie has been favorited, display a list of all of the user name who liked the movie.
@@ -11,17 +11,18 @@ class UserList extends Component {
     
     */}
     
-    if(userWhoLikedMovie === 0) {
-      return <p>No one liked this movie.</p>
+    if(!userWhoLikedMovie || userWhoLikedMovie.length === 0) {
+      return <p>No one likes this movie.</p>
     }
 
-    // const listItem = userWhoLikedMovie.map(id => (
-    //   <li key={id}>
-    //     <p>{user[id].name}</p>
-    //   </li>
-    // ));
+    
+    const listItem = userWhoLikedMovie.map(id => (
+      <li key={id}>
+        {users[id].name}
+      </li>
+    ));
 
-    return <p>Hello world</p>;
+    return <p>{listItem}</p>;
   } 
 }
 
