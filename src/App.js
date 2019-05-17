@@ -45,32 +45,32 @@ const profiles = [
 const users = {
   1: {
     id: 1,
-    name: 'Jane Jones',
+    name: 'Jon Snow',
     userName: 'coder',
   },
   2: {
     id: 2,
-    name: 'Matthew Johnson',
+    name: 'Arya Stark',
     userName: 'mpage',
   },
   3: {
     id: 3,
-    name: 'Autumn Green',
+    name: 'Tyrion Lannister',
     userName: 'user123',
   },
   4: {
     id: 3,
-    name: 'John Doe',
+    name: 'Sansa Stark',
     userName: 'user123',
   },
   5: {
     id: 5,
-    name: 'Lauren Carlson',
+    name: 'Petyr Baelish',
     userName: 'user123',
   },
   6: {
     id: 6,
-    name: 'Nicholas Lain',
+    name: 'Daenerys Targaryen',
     userName: 'user123',
   },
 };
@@ -78,23 +78,23 @@ const users = {
 const movies = {
   1: {
     id: 1,
-    name: 'Planet Earth',
+    name: 'The Three Musketeers',
   },
   2: {
     id: 2,
-    name: 'Selma',
+    name: 'Mission Impossible',
   },
   3: {
     id: 3,
-    name: 'Million Dollar Baby',
+    name: 'The Equalizer 2',
   },
   4: {
     id: 4,
-    name: 'Forrest Gump',
+    name: 'Dragon Ball Z',
   },
   5: {
     id: 5,
-    name: 'Get Out',
+    name: 'Game of Thrones',
   },
 };
 
