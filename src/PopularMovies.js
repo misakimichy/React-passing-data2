@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import MovieCard from './MovieCard.js';
+import UserList from './UserList.js';
 
 
-class PopularMoives extends Component {
+class PopularMovies extends Component {
 	render() {
-      console.log('props', this.props);
+    
+      const {user,userWhoLikedMovie, movie} = this.props
       
-      const movieCards = object.keys(movies).map(id => (
-        <MovieCard
-        	key={id}
-            users={users}
-  			usersWhoLikedMovie={usersByMovie[id]}
-        	movieInfo={movies[id]}
-        />
-      ));
-	
 	  //Return JSX
-      return <ul>{movieCards}</ul>;
+      return (
+        <div key={movie} className="popular-movie"> 
+          <h3>{movie.name}</h3>
+          <p>Liked By</p>
+
+          {/* Extend UserList here */}
+          <UserList user={user} userWhoLikedMovie={userWhoLikedMovie} />
+        </div>
+      );
     }
 }
 
-export default PopularMoives;
+export default PopularMovies;
