@@ -4,19 +4,19 @@ import UserList from './UserList.js';
 
 class PopularMovies extends Component {
 	render() {
-    
-      const {user,userWhoLikedMovie, movie} = this.props
+      console.log('Prop',this.props);
+      const {userByMovie, users, movies} = this.props
+
+      const movieCards = object.keys(movies).map(id => (
+        <MovieInfo key={id}
+        users={users}
+        userWhoLikedMovie={userByMovie[id]}
+        movieInfo={movies[id]}
+        />
+      ))
       
 	  //Return JSX
-      return (
-        <div key={movie} className="popular-movie"> 
-          <h3>{movie.name}</h3>
-          <p>Liked By</p>
-
-          {/* Extend UserList here */}
-          <UserList user={user} userWhoLikedMovie={userWhoLikedMovie} />
-        </div>
-      );
+      return <div>{movieCards}</div>;
     }
 }
 
